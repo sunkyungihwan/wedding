@@ -15,17 +15,12 @@
 }
 
 body {background-color: #282c34; margin: 0px;}
+button{font-family: GmarketSansMedium;}
 
-.container {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 500;
-    font-family: GmarketSansMedium;
-    max-width: 500px;
-    margin: auto;
-    background-color: #fff;
-    padding: 20px;
-}
+.container {text-align: center; font-size: 12px; font-weight: 500; font-family: GmarketSansMedium; max-width: 500px; margin: auto; background-color: #fff; padding: 20px;}
+.container .content{margin: 50px 0;}
+
+.content .title{font-size: calc(12px + 1vmin);}
 
 .App-logo {
     height: 40vmin;
@@ -63,34 +58,14 @@ body {background-color: #282c34; margin: 0px;}
     }
 }
 
-.home .title {
-    min-height: 400px;
-    background-image: url('../src/assets/img/6MB_CAT.png');
-    background-size: cover;
-}
+/* home */
+.home .title {min-height: 400px; background-image: url('../src/assets/img/6MB_CAT.png'); background-size: cover;}
+.home .location{font-size: calc(10px + 1vmin);}
+.grid .square {border: 1px solid #ec6c61; border-left: 0px; padding: 2px;}
 
-.grid .square {
-    border: 1px solid #ec6c61;
-    border-left: 0px;
-    padding: 2px;
-}
+.cursive {font-family: Humanbumsuk; color: #fff; font-weight: 100; -ms-transform: rotate(340deg); -webkit-transform: rotate(340deg); transform: rotate(340deg); display: flex; flex-direction: column;}
 
-.cursive {
-    font-family: Humanbumsuk;
-    color: #fff;
-    font-weight: 100;
-    -ms-transform: rotate(340deg);
-    /* IE 9 */
-    -webkit-transform: rotate(340deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(340deg);
-    display: flex;
-    flex-direction: column;
-}
-
-.customoverlay {
-    position: relative;
-    top: 50px;
+.customoverlay {position: relative; top: 50px;
     border-radius: 6px;
     border: 1px solid #ccc;
     border-bottom: 2px solid #ddd;
@@ -125,26 +100,16 @@ body {background-color: #282c34; margin: 0px;}
     font-weight: bold;
 }
 
-.customoverlay:after {
-    content: '';
-    position: absolute;
-    margin-left: -12px;
-    left: 50%;
-    top: -12px;
-    width: 22px;
-    height: 12px;
+.customoverlay:after {content: ''; position: absolute; margin-left: -12px; left: 50%; top: -12px; width: 22px; height: 12px; 
     background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png');
-    -ms-transform: rotate(180deg);
-    /* IE 9 */
-    -webkit-transform: rotate(180deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
-}
+    -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg);}
+/* place */
+.place .map {width: calc(100% - 10vmin); height: 240px; margin: 20px auto;}
 
-.place .map {
-    width: 90vw;
-    height: 60vw;
-    max-width: 360px;
-    max-height: 240px;
-    margin: 20px auto 0 !important;
-}
+/* account */
+.account .accountBox{padding: 0 60px;}
+.account .button.arrow{width: 100%; display:flex; margin:0 auto; align-items:center; justify-content: center; vertical-align: middle; position: relative; height: 30px; padding: 0 20px; overflow: hidden; border: none; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; background: #f8f8f9; color: #333; cursor: pointer; white-space: nowrap;}
+.account .button.arrow .minus::after{content:''; font-size:0; display:block; margin:0 0 0 10px; width:13px; height:8px; background:url(../src/assets/img/icon_arrowDown.svg)no-repeat;}
+
+.accordion{display:flex; padding: 10px; justify-content:space-between}
+.accordion .buttonWrap{display:flex; flex-direction: column;}

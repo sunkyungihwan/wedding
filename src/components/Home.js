@@ -16,9 +16,8 @@ function Home() {
                     </div>
                 </h1>
             </div>
-            <div className="border"></div>
             <div className="location">
-                <p className="py-20 text">
+                <p>
                     2023. 02. 25. 토요일 낮 13:30 <br />
                     빌라드 지디 수서
                 </p>

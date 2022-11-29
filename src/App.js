@@ -6,14 +6,14 @@ import Account from './components/Account';
 import './App.css';
 
 function App() {
-    return [
+    return (
         <div className="container">
             <Home />
             <Gallery />
             <Account />
             <Place />
         </div>
-    ];
+    );
 }
 
 export default App;

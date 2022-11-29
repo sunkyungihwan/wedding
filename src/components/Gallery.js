@@ -9,6 +9,7 @@ const images = [
 function Gallery() {
     return (
         <div className="content gallery">
+            <h2 className="title">갤러리</h2>
             <ImageGallery showPlayButton={false} showFullscreenButton={false} items={images} />
         </div>
     );

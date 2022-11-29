@@ -46,7 +46,7 @@ function Place() {
 
     return (
         <div className="content place">
-            <h2>오시는 길</h2>
+            <h2 className="title">오시는 길</h2>
             <div>빌라드 지디 수서</div>
             서울시 강남구 밤고개로21길 79(율현동 68-8) 02-543-2555
             <div className="map" ref={container}></div>
