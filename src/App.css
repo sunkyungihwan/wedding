@@ -17,7 +17,7 @@
 body {background-color: #282c34; margin: 0px;}
 button{font-family: GmarketSansMedium;}
 
-.container {text-align: center; font-size: 12px; font-weight: 500; font-family: GmarketSansMedium; max-width: 500px; margin: auto; background-color: #fff; padding: 20px;}
+.container {text-align: center; font-size: 12px; font-weight: 500; font-family: GmarketSansMedium; max-width: 500px; margin: auto; background-color: #f8f9fb;}
 .container .content{margin: 50px 0;}
 
 .content .title{font-size: calc(12px + 1vmin);}
@@ -59,7 +59,7 @@ button{font-family: GmarketSansMedium;}
 }
 
 /* home */
-.home .title {min-height: 400px; background-image: url('../src/assets/img/6MB_CAT.png'); background-size: cover;}
+.home .title img{width: 100%;}
 .home .location{font-size: calc(10px + 1vmin);}
 .grid .square {border: 1px solid #ec6c61; border-left: 0px; padding: 2px;}
 
@@ -109,7 +109,8 @@ button{font-family: GmarketSansMedium;}
 /* account */
 .account .accountBox{padding: 0 60px;}
 .account .button.arrow{width: 100%; display:flex; margin:0 auto; align-items:center; justify-content: center; vertical-align: middle; position: relative; height: 30px; padding: 0 20px; overflow: hidden; border: none; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; background: #f8f8f9; color: #333; cursor: pointer; white-space: nowrap;}
-.account .button.arrow .minus::after{content:''; font-size:0; display:block; margin:0 0 0 10px; width:13px; height:8px; background:url(../src/assets/img/icon_arrowDown.svg)no-repeat;}
-
+.account .button.arrow .icon::after{content:''; font-size:0; display:block; width:13px; height:8px; background:url(../src/assets/img/icon_arrowDown.svg)no-repeat;}
+.account .button.arrow .plus{transform: rotate(180deg); padding:0 10px 0 0; }
+.account .button.arrow .minus{ padding:0 0 0 10px; }
 .accordion{display:flex; padding: 10px; justify-content:space-between}
 .accordion .buttonWrap{display:flex; flex-direction: column;}

@@ -1,19 +1,19 @@
-import React from 'react';
-
-function toggleClick(e) {
-    console.log(e);
-    e.target;
-}
+import React, { useState } from 'react';
 
 function Account() {
+    const [isGroomActive, setGroomActive] = useState(false);
+
+    function toggleGroomActive() {
+        setGroomActive(!isGroomActive);
+    }
     return (
         <div className="content account">
             <h2 className="title">마음 전하실 곳</h2>
             <div className="accountBox">
                 <div>
-                    <button className="button arrow" onClick={toggleClick}>
+                    <button className="button arrow" onClick={toggleGroomActive}>
                         신랑측 계좌번호
-                        <div className="minus"></div>
+                        <div className={isGroomActive ? 'icon plus' : 'icon minus'}></div>
                     </button>
                 </div>
                 <div className="accordionBox">

@@ -1,20 +1,11 @@
 import React from 'react';
+import photo1 from '../assets/img/pic00.JPG';
 
 function Home() {
     return (
         <div className="content home">
             <div className="title">
-                <h1>
-                    <div className="grid">
-                        <div className="cursive">
-                            <span>We</span>
-                            <span>Are</span>
-                            <span>married</span>
-                        </div>
-                        <span className="square">결</span>
-                        <span className="square">혼</span>
-                    </div>
-                </h1>
+                <img src={photo1} />
             </div>
             <div className="location">
                 <p>
