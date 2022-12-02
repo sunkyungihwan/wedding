@@ -103,15 +103,15 @@ button{font-family: GmarketSansMedium;}
     background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png');
     -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg);}
 /* place */
-.container .place {padding: 50px}
+.container .place {padding: 10%}
 .place .map {width: calc(100% - 10vmin); height: 240px; margin: 20px auto;}
 
 /* gallery */
-.container .gallery {margin: 50px}
+.container .gallery {margin: 10%}
 
 
 /* account */
-.account .accountBox{padding: 0 90px;}
+.account .accountBox{padding: 0 10%;}
 .account .button.arrow{width: 100%; display:flex; margin:0 auto; align-items:center; justify-content: center; position: relative; height: 40px; padding: 0 20px; border: none; border-radius: 10px; background: #fff; cursor: pointer; box-shadow: 0 3px 3px rgb(0 0 0 / 10%);}
 .account .button.arrow .icon::after{content:''; font-size:0; display:block; width:13px; height:8px; background:url(../src/assets/img/icon_arrowDown.svg)no-repeat;}
 .account .button.arrow .plus{transform: rotate(180deg); padding:0 10px 0 0; }
