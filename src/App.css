@@ -18,7 +18,6 @@ body {background-color: #282c34; margin: 0px;}
 button{font-family: GmarketSansMedium;}
 
 .container {text-align: center; font-size: 12px; font-weight: 500; font-family: GmarketSansMedium; max-width: 500px; margin: auto; background-color: #f8f9fb;}
-.container .content{margin: 50px 0;}
 
 .content .title{font-size: calc(12px + 1vmin);}
 
@@ -104,13 +103,24 @@ button{font-family: GmarketSansMedium;}
     background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png');
     -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg);}
 /* place */
+.container .place {padding: 50px}
 .place .map {width: calc(100% - 10vmin); height: 240px; margin: 20px auto;}
 
+/* gallery */
+.container .gallery {margin: 50px}
+
+
 /* account */
-.account .accountBox{padding: 0 60px;}
-.account .button.arrow{width: 100%; display:flex; margin:0 auto; align-items:center; justify-content: center; vertical-align: middle; position: relative; height: 30px; padding: 0 20px; overflow: hidden; border: none; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; background: #f8f8f9; color: #333; cursor: pointer; white-space: nowrap;}
+.account .accountBox{padding: 0 90px;}
+.account .button.arrow{width: 100%; display:flex; margin:0 auto; align-items:center; justify-content: center; position: relative; height: 40px; padding: 0 20px; border: none; border-radius: 10px; background: #fff; cursor: pointer; box-shadow: 0 3px 3px rgb(0 0 0 / 10%);}
 .account .button.arrow .icon::after{content:''; font-size:0; display:block; width:13px; height:8px; background:url(../src/assets/img/icon_arrowDown.svg)no-repeat;}
 .account .button.arrow .plus{transform: rotate(180deg); padding:0 10px 0 0; }
 .account .button.arrow .minus{ padding:0 0 0 10px; }
-.accordion{display:flex; padding: 10px; justify-content:space-between}
+
+.accordionBox{margin: 10px 0; padding:1px 10px ; border:none; border-radius: 10px; background-color: #f1f2f4;}
+.accordion{display:flex; margin: 10px 0; padding: 10px; justify-content:space-between; align-items:center; border: none; border-radius: 10px; background: #fff; box-shadow: 0 3px 3px rgb(0 0 0 / 10%); -webkit-transition: all 0.16s cubic-bezier(0.7, 0, 0.3, 1);}
+.accordion .accordion-body{display: flex; justify-content: left; flex-direction: column; align-items: flex-start;}
 .accordion .buttonWrap{display:flex; flex-direction: column;}
+.accordion .buttonWrap button{border:none; display: flex; width:80px; height:25px; border-radius: 15px; background-color: #337ab7; align-items:center; justify-content: center; margin:2px; color: #fff; padding:5px}
+.accordion .buttonWrap .kakao{background-color: #fbdf1d;}
+.accordion .buttonWrap .kakao img{width:70px; height:15px; object-fit: contain;}

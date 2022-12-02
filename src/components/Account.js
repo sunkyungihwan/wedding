@@ -1,10 +1,38 @@
 import React, { useState } from 'react';
+import kakaopay from '../assets/img/icon-kakaopay.png';
 
 function Account() {
     const [isGroomActive, setGroomActive] = useState(false);
 
     function toggleGroomActive() {
         setGroomActive(!isGroomActive);
+    }
+    function Accordion() {
+        return (
+            <div className="accordionBox">
+                <div className="accordion">
+                    <div className="accordion-body">
+                        <span>국민은행 636102-01-084239</span>
+                        <span>최선경</span>
+                    </div>
+                    <div className="buttonWrap">
+                        <button>복사하기</button>
+                    </div>
+                </div>
+                <div className="accordion">
+                    <div className="accordion-body">
+                        <span>국민은행 636102-01-084239</span>
+                        <span>최선경</span>
+                    </div>
+                    <div className="buttonWrap">
+                        <button>복사하기</button>
+                        <button className="kakao">
+                            <img src={kakaopay} />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        );
     }
     return (
         <div className="content account">
@@ -16,19 +44,7 @@ function Account() {
                         <div className={isGroomActive ? 'icon plus' : 'icon minus'}></div>
                     </button>
                 </div>
-                <div className="accordionBox">
-                    <div className="accordion">
-                        <div className="accordion-body">
-                            <span>국민은행 636102-01-084239</span>
-                            <br />
-                            <span>최선경</span>
-                        </div>
-                        <div className="buttonWrap">
-                            <button>복사하기</button>
-                            <button>카카오 페이</button>
-                        </div>
-                    </div>
-                </div>
+                {isGroomActive ? <Accordion /> : null}
             </div>
         </div>
     );
