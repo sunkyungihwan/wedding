@@ -2,15 +2,22 @@ import React, { useState } from 'react';
 import Accordion from './Accordion';
 
 function AccountInfo({ data }) {
-    const [isActive, setGroomActive] = useState(false);
+    let [isActive, setActive] = useState(false);
+    let [isRealActive, setRealActive] = useState(false);
 
     function toggleGroomActive() {
-        setGroomActive(!isActive);
+        setActive(!isActive);
+
+        if (isRealActive) {
+            setTimeout(() => {
+                setRealActive(false);
+            }, 450);
+        } else setRealActive(true);
     }
 
     function AccordionBox({ info }) {
         return (
-            <div className="accordionBox">
+            <div className={isActive ? 'accordionBox plus' : 'accordionBox minus'}>
                 {info.map((accountInfo, idx) => {
                     return <Accordion data={accountInfo} key={'AccordionBox' + idx} />;
                 })}
@@ -21,12 +28,12 @@ function AccountInfo({ data }) {
     return (
         <div className="accountBox">
             <div>
-                <button className="button arrow" onClick={toggleGroomActive}>
+                <button className="button arrow" onClick={toggleGroomActive} disabled={isRealActive ^ isActive}>
                     {data.type}측 계좌번호
                     <div className={isActive ? 'icon plus' : 'icon minus'}></div>
                 </button>
             </div>
-            {isActive ? <AccordionBox info={data.info} /> : null}
+            {isRealActive ? <AccordionBox info={data.info} /> : null}
         </div>
     );
 }

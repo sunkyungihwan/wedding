@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import maker from '../assets/img/marker.png';
+import useScrollFadeIn from '..//hooks/useScrollFadeIn';
 
 const options = {
     center: window.kakao ? new window.kakao.maps.LatLng(37.47417, 127.1151) : null, //지도의 중심좌표.
@@ -7,6 +8,7 @@ const options = {
 };
 
 function Place() {
+    const animatedItem = useScrollFadeIn('up', 1, 0);
     const container = useRef(null); //지도를 담을 영역의 DOM 레퍼런스
 
     useEffect(() => {
@@ -46,7 +48,7 @@ function Place() {
     }, []);
 
     return (
-        <div className="content place">
+        <div {...animatedItem} className="content place">
             <h2 className="title">오시는 길</h2>
             <div className="address">
                 <span>빌라드 지디 수서</span>

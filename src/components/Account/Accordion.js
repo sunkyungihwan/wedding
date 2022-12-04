@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import kakaopay from '../../assets/img/icon-kakaopay.png';
 
-function AccountInfo({ data }) {
+function Accordion({ data }) {
+    let [isCopied, setCopied] = useState(false);
     const doCopy = (text) => {
         // 흐음 1.
         if (navigator.clipboard) {
@@ -9,7 +10,10 @@ function AccountInfo({ data }) {
             navigator.clipboard
                 .writeText(text)
                 .then(() => {
-                    alert('클립보드에 복사되었습니다.');
+                    setCopied(true);
+                    setTimeout(() => {
+                        setCopied(false);
+                    }, 1000);
                 })
                 .catch(() => {
                     alert('복사를 다시 시도해주세요.');
@@ -37,6 +41,10 @@ function AccountInfo({ data }) {
             document.execCommand('copy');
             // 흐름 6.
             document.body.removeChild(textarea);
+            setCopied(true);
+            setTimeout(() => {
+                setCopied(false);
+            }, 1000);
         }
     };
     return (
@@ -49,7 +57,13 @@ function AccountInfo({ data }) {
                 <span>{data.name}</span>
             </div>
             <div className="buttonWrap">
-                <button onClick={() => doCopy(data.account_number)}>복사하기</button>
+                {isCopied ? (
+                    <div className="complete">
+                        <span>복사완료</span>
+                    </div>
+                ) : (
+                    <button onClick={() => doCopy(data.account_number)}>복사하기</button>
+                )}
                 {data.kakaopay !== '' ? (
                     <button
                         className="kakao"
@@ -65,4 +79,4 @@ function AccountInfo({ data }) {
     );
 }
 
-export default AccountInfo;
+export default Accordion;
