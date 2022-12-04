@@ -111,8 +111,8 @@ button{font-family: GmarketSansMedium;}
 
 
 /* account */
-.account .accountBox{padding: 0 10%;}
-.account .button.arrow{width: 100%; display:flex; margin:0 auto; align-items:center; justify-content: center; position: relative; height: 40px; padding: 0 20px; border: none; border-radius: 10px; background: #fff; cursor: pointer; box-shadow: 0 3px 3px rgb(0 0 0 / 10%);}
+.account .accountBox{padding: 0 10%; margin: 2% 0}
+.account .button.arrow{width: 100%; display:flex; margin:0 auto; align-items:center; justify-content: center; position: relative; height: 40px; padding: 0 20px; border: none; border-radius: 10px; background: #fff; color:#000; cursor: pointer; font-size: .9rem; box-shadow: 0 3px 3px rgb(0 0 0 / 10%);}
 .account .button.arrow .icon::after{content:''; font-size:0; display:block; width:13px; height:8px; background:url(../src/assets/img/icon_arrowDown.svg)no-repeat;}
 .account .button.arrow .plus{transform: rotate(180deg); padding:0 10px 0 0; }
 .account .button.arrow .minus{ padding:0 0 0 10px; }
@@ -120,7 +120,8 @@ button{font-family: GmarketSansMedium;}
 .accordionBox{margin: 10px 0; padding:1px 10px ; border:none; border-radius: 10px; background-color: #f1f2f4;}
 .accordion{display:flex; margin: 10px 0; padding: 10px; justify-content:space-between; align-items:center; border: none; border-radius: 10px; background: #fff; box-shadow: 0 3px 3px rgb(0 0 0 / 10%); -webkit-transition: all 0.16s cubic-bezier(0.7, 0, 0.3, 1);}
 .accordion .accordion-body{display: flex; justify-content: left; flex-direction: column; align-items: flex-start;}
-.accordion .buttonWrap{display:flex; flex-direction: column;}
-.accordion .buttonWrap button{border:none; display: flex; width:80px; height:25px; border-radius: 15px; background-color: #337ab7; align-items:center; justify-content: center; margin:2px; color: #fff; padding:5px}
+.accordion .buttonWrap{display:flex; flex-direction: column; color: #000;}
+.accordion .buttonWrap button{border:none; display: flex; width:80px; height:25px; border-radius: 15px; background-color: #f0f1f3; align-items:center; justify-content: center; margin:2px; color: #000; padding:5px}
+.accordion .buttonWrap .complete{background-color: #fff; color: #337ab7;}
 .accordion .buttonWrap .kakao{background-color: #fbdf1d;}
 .accordion .buttonWrap .kakao img{width:70px; height:15px; object-fit: contain;}

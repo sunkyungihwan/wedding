@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import maker from '../assets/img/marker.png';
 
 const options = {
-    center: new window.kakao.maps.LatLng(37.47417, 127.1151), //지도의 중심좌표.
+    center: window.kakao ? new window.kakao.maps.LatLng(37.47417, 127.1151) : null, //지도의 중심좌표.
     level: 6
 };
 
@@ -10,6 +10,7 @@ function Place() {
     const container = useRef(null); //지도를 담을 영역의 DOM 레퍼런스
 
     useEffect(() => {
+        if (!window.kakao) return () => {};
         const map = new window.kakao.maps.Map(container.current, options); //지도 생성 및 객체 리턴
         var markerPosition = new window.kakao.maps.LatLng(37.47417, 127.1151);
 
@@ -51,10 +52,27 @@ function Place() {
             서울시 강남구 밤고개로21길 79(율현동 68-8) 02-543-2555
             <div className="map" ref={container}></div>
             <div>
-                SRT SRT수서역 1번 출구로 나와 지하철 수서역 4번 출구 앞 10분 간격 셔틀버스 운행 지하철 3호선 수서역 4번
-                축구 앞 10분 간격 셔틀버스 운행 (5번 출구 에스컬레이터 이용 후 이동 추천) 버스
-                강남한양수자인APT정류장(도보 10분) 3426, 402 자차 서울시 강남구 밤고개로21길 79(율현동) 빨간모자 쓴 주차
-                안내 직원을 찾아주세요 주차 공간이 협소하여
+                <div>
+                    <div>SRT</div>
+                    <div>SRT수서역 1번 출구로 나와 지하철 수서역 4번 출구 앞 10분 간격 셔틀버스 운행</div>
+                </div>
+                <div>
+                    <div>지하철</div>
+                    <div>
+                        3호선 수서역 4번 출구 앞 10분 간격 셔틀버스 운행 (5번 출구 에스컬레이터 이용 후 이동 추천)
+                    </div>
+                </div>
+                <div>
+                    <div>버스</div>
+                    <div>강남한양수자인APT정류장(도보 10분) 3426, 402</div>
+                </div>
+                <div>
+                    <div>자차</div>
+                    <div>
+                        서울시 강남구 밤고개로21길 79(율현동) 빨간모자 쓴 주차 안내 직원을 찾아주세요 주차 공간이
+                        협소하여
+                    </div>
+                </div>
             </div>
         </div>
     );
