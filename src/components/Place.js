@@ -48,29 +48,32 @@ function Place() {
     return (
         <div className="content place">
             <h2 className="title">오시는 길</h2>
-            <div>빌라드 지디 수서</div>
-            서울시 강남구 밤고개로21길 79(율현동 68-8) 02-543-2555
+            <div className="address">
+                <span>빌라드 지디 수서</span>
+                <span>서울시 강남구 밤고개로21길 79 (율현동 68-8)</span>
+                <a href={'tel:02-543-2555'}>02-543-2555</a>
+            </div>
             <div className="map" ref={container}></div>
-            <div>
-                <div>
-                    <div>SRT</div>
+            <div className="transportation">
+                <div className="transBox">
+                    <div className="means">SRT</div>
                     <div>SRT수서역 1번 출구로 나와 지하철 수서역 4번 출구 앞 10분 간격 셔틀버스 운행</div>
                 </div>
-                <div>
-                    <div>지하철</div>
+                <div className="transBox">
+                    <div className="means">지하철</div>
                     <div>
                         3호선 수서역 4번 출구 앞 10분 간격 셔틀버스 운행 (5번 출구 에스컬레이터 이용 후 이동 추천)
                     </div>
                 </div>
-                <div>
-                    <div>버스</div>
+                <div className="transBox">
+                    <div className="means">버스</div>
                     <div>강남한양수자인APT정류장(도보 10분) 3426, 402</div>
                 </div>
-                <div>
-                    <div>자차</div>
+                <div className="transBox">
+                    <div className="means">자차</div>
                     <div>
                         서울시 강남구 밤고개로21길 79(율현동) 빨간모자 쓴 주차 안내 직원을 찾아주세요 주차 공간이
-                        협소하여
+                        협소하여❤️❤️‍🔥💓💗❣️💕🌿💖🥳 ⭐️✨🌟💫🤩🤵‍♂️👰‍♀️👑🍽️🍴🚗🚌🚃🚘🚅📞
                     </div>
                 </div>
             </div>
