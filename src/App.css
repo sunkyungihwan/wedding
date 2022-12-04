@@ -16,65 +16,23 @@
 
 body {background-color: #282c34; margin: 0px;}
 button{font-family: GmarketSansMedium;}
+button:hover {background:#f5f5f5; text-decoration:underline;}
+button:active {background:#ccc; text-decoration:none; box-shadow:inset 0 0 0 3px #337ab7;}
 
-.container {text-align: center; font-size: 12px; font-weight: 500; font-family: GmarketSansMedium; max-width: 500px; margin: auto; background-color: #f8f9fb;}
+.container {text-align: center; font-size: calc(12px + 1vmin); font-weight: 500; font-family: GmarketSansMedium; max-width: 500px; margin: auto; background-color: #f8f9fb;}
 
-.content .title{font-size: calc(12px + 1vmin);}
-
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
+.content .title{font-size: 1.2rem;}
 
 /* home */
 .home .title img{width: 100%;}
-.home .location{font-size: calc(10px + 1vmin);}
+.home .location{font-size: 1.1rem}
 .grid .square {border: 1px solid #ec6c61; border-left: 0px; padding: 2px;}
 
 .cursive {font-family: Humanbumsuk; color: #fff; font-weight: 100; -ms-transform: rotate(340deg); -webkit-transform: rotate(340deg); transform: rotate(340deg); display: flex; flex-direction: column;}
 
-.customoverlay {position: relative; top: 50px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    border-bottom: 2px solid #ddd;
-    float: left;
-}
+.customoverlay {position: relative; top: 50px; border-radius: 6px; border: 1px solid #ccc; border-bottom: 2px solid #ddd; float: left;}
 
-.customoverlay:nth-of-type(n) {
-    border: 0;
-    box-shadow: 0px 1px 2px #888;
-}
+.customoverlay:nth-of-type(n) {border: 0; box-shadow: 0px 1px 2px #888;}
 
 .customoverlay a {
     display: block;
@@ -89,15 +47,7 @@ button{font-family: GmarketSansMedium;}
     background: #f0ab00 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;
 }
 
-.customoverlay .tag {
-    display: block;
-    text-align: center;
-    background: #fff;
-    margin-right: 35px;
-    padding: 10px 15px;
-    font-size: 14px;
-    font-weight: bold;
-}
+.customoverlay .tag {display: block; text-align: center; background: #fff; margin-right: 35px; padding: 10px 15px; font-size: 14px; font-weight: bold;}
 
 .customoverlay:after {content: ''; position: absolute; margin-left: -12px; left: 50%; top: -12px; width: 22px; height: 12px; 
     background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png');
@@ -117,11 +67,14 @@ button{font-family: GmarketSansMedium;}
 .account .button.arrow .plus{transform: rotate(180deg); padding:0 10px 0 0; }
 .account .button.arrow .minus{ padding:0 0 0 10px; }
 
-.accordionBox{margin: 10px 0; padding:1px 10px ; border:none; border-radius: 10px; background-color: #f1f2f4;}
-.accordion{display:flex; margin: 10px 0; padding: 10px; justify-content:space-between; align-items:center; border: none; border-radius: 10px; background: #fff; box-shadow: 0 3px 3px rgb(0 0 0 / 10%); -webkit-transition: all 0.16s cubic-bezier(0.7, 0, 0.3, 1);}
-.accordion .accordion-body{display: flex; justify-content: left; flex-direction: column; align-items: flex-start;}
+.accordionBox{padding:1px 10px ; border:none; border-radius: 10px; background-color: #f1f2f4;}
+.accordion{display:flex; margin: 10px 0; padding: 10px; justify-content:space-between; align-items:center; border: none; border-radius: 10px; background: #fff; box-shadow: 0 3px 3px rgb(0 0 0 / 10%); }
+.accordion .accordionInfo{display: flex; justify-content: left; font-size: 0.8rem; flex-direction: column; text-align: left;}
+.accordion .accordionInfo .accountInfo{display: flex; padding: 0 0 5px 0}
+.accordion .accordionInfo .bank{padding: 0 5px 0 0}
+
 .accordion .buttonWrap{display:flex; flex-direction: column; color: #000;}
-.accordion .buttonWrap button{border:none; display: flex; width:80px; height:25px; border-radius: 15px; background-color: #f0f1f3; align-items:center; justify-content: center; margin:2px; color: #000; padding:5px}
+.accordion .buttonWrap button{border:none; cursor: pointer; display: flex; width:70px; height:25px; border-radius: 15px; background-color: #f0f1f3; align-items:center; justify-content: center; margin:2px; color: #000; padding:5px}
 .accordion .buttonWrap .complete{background-color: #fff; color: #337ab7;}
 .accordion .buttonWrap .kakao{background-color: #fbdf1d;}
 .accordion .buttonWrap .kakao img{width:70px; height:15px; object-fit: contain;}

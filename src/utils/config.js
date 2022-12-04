@@ -9,7 +9,7 @@ export const ACCOUNT_INFO = [
     {
         type: '신랑',
         info: [
-            { name: '이기환', account_bank: '국민은행', account_number: '636102-01-084239', kakaopay: '' },
+            { name: '이기환', account_bank: '카카오뱅크', account_number: '0000-0000-0000-0', kakaopay: '' },
             { name: '이기환', account_bank: '국민은행', account_number: '636102-01-084239', kakaopay: '' },
             {
                 name: '이기환',

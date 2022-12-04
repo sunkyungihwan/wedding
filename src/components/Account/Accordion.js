@@ -37,15 +37,15 @@ function AccountInfo({ data }) {
             document.execCommand('copy');
             // 흐름 6.
             document.body.removeChild(textarea);
-            alert('클립보드에 복사되었습니다.');
         }
     };
     return (
         <div className="accordion">
-            <div className="accordion-body">
-                <span>
-                    {data.account_bank} {data.account_number}
-                </span>
+            <div className="accordionInfo">
+                <div className="accountInfo">
+                    <span className="bank">{data.account_bank}</span>
+                    <span>{data.account_number}</span>
+                </div>
                 <span>{data.name}</span>
             </div>
             <div className="buttonWrap">

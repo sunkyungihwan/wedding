@@ -9,9 +9,13 @@ function AccountInfo({ data }) {
     }
 
     function AccordionBox({ info }) {
-        return info.map((accountInfo, idx) => {
-            return <Accordion data={accountInfo} key={'AccordionBox' + idx} />;
-        });
+        return (
+            <div className="accordionBox">
+                {info.map((accountInfo, idx) => {
+                    return <Accordion data={accountInfo} key={'AccordionBox' + idx} />;
+                })}
+            </div>
+        );
     }
 
     return (
