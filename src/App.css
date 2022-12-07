@@ -67,6 +67,9 @@ button:disabled {opacity:0.4;}
 .place .transportation .transBox{margin: 15px 5px}
 .place .transportation .means{font-size: 1rem;}
 
+/* information */
+.container .information {margin: 10%}
+.information img{width: 100%;}
 
 /* gallery */
 .container .gallery {margin: 10%}

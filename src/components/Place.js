@@ -58,13 +58,10 @@ function Place() {
             <div className="map" ref={container}></div>
             <div className="transportation">
                 <div className="transBox">
-                    <div className="means">SRT</div>
-                    <div>SRT수서역 1번 출구로 나와 지하철 수서역 4번 출구 앞 10분 간격 셔틀버스 운행</div>
-                </div>
-                <div className="transBox">
-                    <div className="means">지하철</div>
+                    <div className="means">셔틀버스</div>
                     <div>
-                        3호선 수서역 4번 출구 앞 10분 간격 셔틀버스 운행 (5번 출구 에스컬레이터 이용 후 이동 추천)
+                        지하철 수서역 4번 출구 앞 10분 간격 셔틀버스 운행 <br />* SRT는 수서역 1번 출구로 나와서 4번
+                        출구로
                     </div>
                 </div>
                 <div className="transBox">
