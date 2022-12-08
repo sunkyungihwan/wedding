@@ -37,10 +37,10 @@
 }
 
 body {background-color: #282c34; margin: 0px;}
-button{font-family: Binggrae;}
+button{font-family: Binggrae; font-weight: bold; color: #444;}
 button:disabled {opacity:0.4;}
 
-.container {text-align: center; font-size: calc(12px + 1vmin); font-weight: 500; font-family: Binggrae; max-width: 500px; margin: auto; background-color: #f8f9fb;}
+.container {text-align: center; font-size: calc(12px + 1vmin); font-weight: bold; font-family: Binggrae; color: #333; max-width: 500px; margin: auto; background-color: #f8f9fb;}
 
 .content .title{font-size: 1.2rem;}
 
@@ -52,18 +52,19 @@ button:disabled {opacity:0.4;}
 /* place */
 .container .place {padding: 10%}
 .place .map {height: 240px; margin: 20px auto;}
-.place .address{display: flex; flex-direction: column; font-size: .9rem;} 
+.place .address{display: flex; flex-direction: column; font-size: .8rem;} 
 .customoverlay {position: relative; top: 50px; border-radius: 6px; border: 1px solid #ccc; border-bottom: 2px solid #ddd; float: left;}
 .customoverlay:nth-of-type(n) {border: 0; box-shadow: 0px 1px 2px #888;}
 .customoverlay a { display: block; text-decoration: none; color: #000; text-align: center; border-radius: 6px; overflow: hidden; background: #f0ab00;
     background: #f0ab00 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
-.customoverlay .tag {display: block; text-align: center; background: #fff; margin-right: 35px; padding: 5px 10px; font-size: .9rem;}
+.customoverlay .tag {display: block; text-align: center; background: #fff; margin-right: 35px; padding: 5px 10px; font-size: .8rem;}
 .customoverlay:after {content: ''; position: absolute; margin-left: -12px; left: 50%; top: -12px; width: 22px; height: 12px; 
     background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png');
     -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg);}
-.place .transportation{font-size: .9rem; text-align: left;}
+.place .transportation{font-size: .8rem; text-align: left;}
 .place .transportation .transBox{margin: 15px 5px}
 .place .transportation .means{font-size: 1rem; font-weight: bold;}
+.place .transportation .desc{margin:5px}
 
 /* information */
 .container .information {margin: 10%}
@@ -75,7 +76,7 @@ button:disabled {opacity:0.4;}
 
 /* account */
 .account .accountBox{padding: 0 10%; margin: 2% 0}
-.account .button.arrow{width: 100%; display:flex; margin:0 auto; align-items:center; justify-content: center; position: relative; height: 40px; padding: 0 20px; border: none; border-radius: 10px; background: #fff; color:#000; cursor: pointer; font-size: .9rem; box-shadow: 0 3px 3px rgb(0 0 0 / 10%); }
+.account .button.arrow{width: 100%; display:flex; margin:0 auto; align-items:center; justify-content: center; position: relative; height: 40px; padding: 0 20px; border: none; border-radius: 10px; background: #fff; cursor: pointer; font-size: .8rem; box-shadow: 0 3px 3px rgb(0 0 0 / 10%); }
 .account .button.arrow .icon::after{content:''; font-size:0; display:block; width:13px; height:8px; background:url(../src/assets/img/icon_arrowDown.svg)no-repeat;}
 .account .button.arrow .plus{transform: rotate(180deg); padding:0 10px 0 0; }
 .account .button.arrow .minus{ padding:0 0 0 10px; }
@@ -91,11 +92,18 @@ button:disabled {opacity:0.4;}
 .accordion .accordionInfo .accountInfo{display: flex; padding: 0 0 5px 0}
 .accordion .accordionInfo .bank{padding: 0 5px 0 0}
 
-.accordion .buttonWrap{display:flex; flex-direction: column; color: #000; font-size: .8rem;}
-.accordion .buttonWrap button{border:none; cursor: pointer; display: flex; width:70px; height:25px; border-radius: 15px; background-color: #f0f1f3; align-items:center; justify-content: center; margin:2px; color: #000; padding:5px}
+.accordion .buttonWrap{display:flex; flex-direction: column; font-size: .8rem;}
+.accordion .buttonWrap button{border:none; cursor: pointer; display: flex; width:70px; height:25px; border-radius: 15px; background-color: #f0f1f3; align-items:center; justify-content: center; margin:2px; padding:5px}
 .accordion .buttonWrap button:hover {background:#f5f5f5; text-decoration:underline;}
 .accordion .buttonWrap button:active {background:#ccc; text-decoration:none; box-shadow:inset 0 0 0 3px #337ab7;}
 
 .accordion .buttonWrap .complete{display:flex; align-items: center; justify-content: center; background-color: #fff; color: #337ab7; width: 70px; height: 25px; padding:2px}
 .accordion .buttonWrap .kakao{background-color: #fbdf1d;}
 .accordion .buttonWrap .kakao img{width:70px; height:15px; object-fit: contain;}
+
+/* footer */
+.footer{padding: 20px; background: #fff; box-shadow: 0 0 5px 5px rgb(0 0 0 / 2%); }
+.footer .shared{display:flex; flex-direction: column;}
+.footer .shared button{border:none; margin: 3px; color: #555; background: #fff; cursor: pointer; font-size: .7rem; }
+.footer .copyright{font-size: .5rem; margin: 10px 0 0 0; color: #ccc}
+.footer .copyright span{font-size: .3rem; font-weight: bold;}

@@ -3,6 +3,7 @@ import Information from './components/Information';
 import Gallery from './components/Gallery';
 import Place from './components/Place';
 import Account from './components/Account';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
             <Gallery />
             <Account />
             <Place />
+            <Footer />
         </div>
     );
 }
