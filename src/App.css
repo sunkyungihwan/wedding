@@ -8,10 +8,10 @@
 }
 
 @font-face {
-    font-family: 'Humanbumsuk';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Binggrae';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @keyframes smoothAppear {
@@ -37,19 +37,17 @@
 }
 
 body {background-color: #282c34; margin: 0px;}
-button{font-family: GmarketSansMedium;}
+button{font-family: Binggrae;}
 button:disabled {opacity:0.4;}
 
-.container {text-align: center; font-size: calc(12px + 1vmin); font-weight: 500; font-family: GmarketSansMedium; max-width: 500px; margin: auto; background-color: #f8f9fb;}
+.container {text-align: center; font-size: calc(12px + 1vmin); font-weight: 500; font-family: Binggrae; max-width: 500px; margin: auto; background-color: #f8f9fb;}
 
 .content .title{font-size: 1.2rem;}
 
 /* home */
 .home .title img{width: 100%;}
-.home .location{font-size: 1.1rem}
+.home .location{font-size: 1rem; font-weight: bold;}
 .grid .square {border: 1px solid #ec6c61; border-left: 0px; padding: 2px;}
-
-.cursive {font-family: Humanbumsuk; color: #fff; font-weight: 100; -ms-transform: rotate(340deg); -webkit-transform: rotate(340deg); transform: rotate(340deg); display: flex; flex-direction: column;}
 
 /* place */
 .container .place {padding: 10%}
@@ -65,7 +63,7 @@ button:disabled {opacity:0.4;}
     -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg);}
 .place .transportation{font-size: .9rem; text-align: left;}
 .place .transportation .transBox{margin: 15px 5px}
-.place .transportation .means{font-size: 1rem;}
+.place .transportation .means{font-size: 1rem; font-weight: bold;}
 
 /* information */
 .container .information {margin: 10%}
