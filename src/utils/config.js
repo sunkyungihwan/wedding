@@ -9,8 +9,8 @@ export const ACCOUNT_INFO = [
     {
         type: '신랑',
         info: [
-            { name: '이기환', account_bank: '카카오뱅크', account_number: '0000-0000-0000-0', kakaopay: '' },
-            { name: '이기환', account_bank: '국민은행', account_number: '636102-01-084239', kakaopay: '' },
+            { name: '이동관', account_bank: '카카오뱅크', account_number: '0000-0000-0000-0', kakaopay: '' },
+            { name: '김태선', account_bank: '국민은행', account_number: '636102-01-084239', kakaopay: '' },
             {
                 name: '이기환',
                 account_bank: '국민은행',
@@ -22,8 +22,8 @@ export const ACCOUNT_INFO = [
     {
         type: '신부',
         info: [
-            { name: '최선경', account_bank: '국민은행', account_number: '636102-01-084239', kakaopay: '' },
-            { name: '최선경', account_bank: '국민은행', account_number: '636102-01-084239', kakaopay: '' },
+            { name: '최용찬', account_bank: '국민은행', account_number: '655225-90-120337', kakaopay: '' },
+            { name: '김점숙', account_bank: '국민은행', account_number: '655202-95-132664', kakaopay: '' },
             {
                 name: '최선경',
                 account_bank: '국민은행',

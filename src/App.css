@@ -45,6 +45,7 @@ button:disabled {opacity:0.4;}
 .content .title{font-size: 1.2rem;}
 
 /* home */
+.home{padding: 10% 0}
 .home .title img{width: 100%;}
 .home .location{font-size: 1rem; font-weight: bold;}
 .grid .square {border: 1px solid #ec6c61; border-left: 0px; padding: 2px;}
@@ -67,11 +68,11 @@ button:disabled {opacity:0.4;}
 .place .transportation .desc{margin:5px}
 
 /* information */
-.container .information {margin: 10%}
+.container .information {margin: 6%}
 .information img{width: 100%;}
 
 /* gallery */
-.container .gallery {margin: 10%}
+.container .gallery {margin: 6%}
 
 
 /* account */
