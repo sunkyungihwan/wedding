@@ -8,7 +8,12 @@ const options = {
 };
 
 function Place() {
-    const animatedItem = [useScrollFadeIn('up', 1, 0),useScrollFadeIn('up', 1, 0),useScrollFadeIn('up', 1, 0),useScrollFadeIn('up', 1, 0)];
+    const animatedItem = [
+        useScrollFadeIn('up', 1, 0),
+        useScrollFadeIn('up', 1, 0),
+        useScrollFadeIn('up', 1, 0),
+        useScrollFadeIn('up', 1, 0)
+    ];
     const container = useRef(null); //지도를 담을 영역의 DOM 레퍼런스
 
     useEffect(() => {
@@ -49,21 +54,22 @@ function Place() {
 
     return (
         <div className="content place">
-            <h2 {...animatedItem[0]} className="title">오시는 길</h2>
+            <h2 {...animatedItem[0]} className="title">
+                오시는 길
+            </h2>
             <div {...animatedItem[1]} className="address">
                 <span>빌라드 지디 수서</span>
                 <span>서울시 강남구 밤고개로21길 79 (율현동 68-8)</span>
                 <a href={'tel:02-543-2555'}>02-543-2555</a>
             </div>
             <div {...animatedItem[2]}>
-                <div  className="map" ref={container}></div>
+                <div className="map" ref={container}></div>
             </div>
             <div {...animatedItem[3]} className="transportation">
                 <div className="transBox">
                     <div className="means">셔틀버스</div>
                     <div className="desc">
-                        지하철 수서역 4번 출구 앞 10분 간격 셔틀버스 운행 <br />* SRT는 수서역 1번 출구로 나와서 4번
-                        출구로
+                        지하철 수서역 4번 출구 앞 10분 간격 셔틀버스 운행 <br />* SRT는 수서역 1번 출구
                     </div>
                 </div>
                 <div className="transBox">
@@ -72,9 +78,7 @@ function Place() {
                 </div>
                 <div className="transBox">
                     <div className="means">자차</div>
-                    <div className="desc">
-                        빨간모자 쓴 주차 안내 직원을 찾아주세요
-                    </div>
+                    <div className="desc">빨간모자 쓴 주차 안내 직원을 찾아주세요</div>
                 </div>
             </div>
         </div>
