@@ -10,7 +10,7 @@ const Information = () => {
             <div>
                 <img src={photo4} />
             </div>
-            <div>
+            <div className="info">
                 <dl className="floor">
                     <dt>5층</dt>
                     <dd>예식장 / 신부대기실</dd>
@@ -23,7 +23,7 @@ const Information = () => {
                 </dl>
                 <dl className="floor">
                     <dt>3층</dt>
-                    <dd>하객맞이</dd>
+                    <dd>로비</dd>
                 </dl>
                 <dl className="floor">
                     <dt>2층</dt>

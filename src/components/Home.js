@@ -1,9 +1,14 @@
 import React from 'react';
-import photo1 from '../assets/img/pic00.JPG';
+import photo1 from '../assets/img/pic00.PNG';
 
 function Home() {
     return (
         <div className="content home">
+            <div className="name">
+                <p>
+                    이기환 <span className="small"> 그리고 </span> 최선경
+                </p>
+            </div>
             <div className="title">
                 <img src={photo1} />
             </div>

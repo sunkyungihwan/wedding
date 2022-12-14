@@ -46,6 +46,8 @@ button:disabled {opacity:0.4;}
 
 /* home */
 .home{padding: 10% 0}
+.home .name{font-size: calc(15px + 1vmin); margin-bottom: 10%}
+.home .name .small{font-size: .9rem; margin: 0 10%}
 .home .title img{width: 100%;}
 .home .location{font-size: 1rem; font-weight: bold;}
 .grid .square {border: 1px solid #ec6c61; border-left: 0px; padding: 2px;}
@@ -62,22 +64,23 @@ button:disabled {opacity:0.4;}
 .customoverlay:after {content: ''; position: absolute; margin-left: -12px; left: 50%; top: -12px; width: 22px; height: 12px; 
     background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png');
     -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg);}
-.place .transportation{font-size: .8rem; text-align: left;}
+.place .transportation{font-size: .8rem; text-align: left; width: 90%; margin:auto} 
 .place .transportation .transBox{margin: 15px 5px}
 .place .transportation .means{font-size: 1rem; font-weight: bold;}
 .place .transportation .desc{margin:5px}
 
 /* information */
-.container .information {margin: 6%}
+.container .information {margin: 10% 6%}
 .information img{width: 100%;}
+.information .info{width: 90%; margin:auto}
 .information dl{margin: 2%; padding:2%; font-size: .8rem; display: flex;}
-.information dl dt{width: 10%;}
+.information dl dt{width: 20%;}
 .information dl dd{display: flex; width: 100%; align-items: center;}
 .information dl dd span{font-size: .7rem; color:#777; margin-left: 10%;}
 .information .floor{border-bottom: 1px solid #bbb;}
 
 /* gallery */
-.container .gallery {margin: 6%}
+.container .gallery {margin:20% 6%}
 .image-gallery-thumbnail .image-gallery-thumbnail-image{opacity: 0.5; cursor: pointer; border-radius: 20px;}
 .image-gallery-thumbnail.active .image-gallery-thumbnail-image{opacity: 1;}
 .image-gallery-icon{color:#fff;transition:all .3s ease-out;appearance:none;background-color:transparent;border:0;cursor:pointer;outline:none;position:absolute;z-index:4;filter:drop-shadow(0 2px 2px #1a1a1a)}
@@ -190,6 +193,7 @@ button:disabled {opacity:0.4;}
 
 
 /* account */
+.container .account {margin: 20% 0}
 .account .accountBox{padding: 0 10%; margin: 2% 0}
 .account .button.arrow{width: 100%; display:flex; margin:0 auto; align-items:center; justify-content: center; position: relative; height: 40px; padding: 0 20px; border: none; border-radius: 10px; background: #fff; cursor: pointer; font-size: .8rem; box-shadow: 0 3px 3px rgb(0 0 0 / 10%); }
 .account .button.arrow .icon::after{content:''; font-size:0; display:block; width:13px; height:8px; background:url(../src/assets/img/icon_arrowDown.svg)no-repeat;}
