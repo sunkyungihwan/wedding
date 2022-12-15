@@ -46,7 +46,7 @@ button:disabled {opacity:0.4;}
 
 /* home */
 .home{padding: 10% 0}
-.home .name{font-size: calc(15px + 1vmin); margin-bottom: 10%}
+.home .name{font-size: calc(18px + 1vmin); margin-bottom: 10%}
 .home .name .small{font-size: .9rem; margin: 0 10%}
 .home .title img{width: 100%;}
 .home .location{font-size: 1rem; font-weight: bold;}
@@ -67,7 +67,7 @@ button:disabled {opacity:0.4;}
 .place .transportation{font-size: .8rem; text-align: left; width: 90%; margin:auto} 
 .place .transportation .transBox{margin: 15px 5px}
 .place .transportation .means{font-size: 1rem; font-weight: bold;}
-.place .transportation .desc{margin:5px}
+.place .transportation .desc{margin:5px; font-weight: normal;}
 
 /* information */
 .container .information {margin: 10% 6%}
@@ -207,7 +207,7 @@ button:disabled {opacity:0.4;}
 .accordionBox.minus .accordion:nth-child(2){animation: smoothDisappear 0.4s; animation-delay: 0.1s;}
 .accordionBox.minus .accordion:nth-child(1){animation: smoothDisappear 0.4s; animation-delay: 0.2s;}
 .accordion{display:flex; margin: 10px 0; padding: 10px; justify-content:space-between; align-items:center; border: none; border-radius: 10px; background: #fff; box-shadow: 0 3px 3px rgb(0 0 0 / 10%); }
-.accordion .accordionInfo{display: flex; justify-content: left; font-size: 0.8rem; flex-direction: column; text-align: left;}
+.accordion .accordionInfo{display: flex; justify-content: left; font-size: 0.7rem; flex-direction: column; text-align: left;}
 .accordion .accordionInfo .accountInfo{display: flex; padding: 0 0 5px 0}
 .accordion .accordionInfo .bank{padding: 0 5px 0 0}
 
@@ -216,7 +216,7 @@ button:disabled {opacity:0.4;}
 .accordion .buttonWrap button:hover {background:#f5f5f5; text-decoration:underline;}
 .accordion .buttonWrap button:active {background:#ccc; text-decoration:none; box-shadow:inset 0 0 0 3px #444;}
 
-.accordion .buttonWrap .complete{display:flex; align-items: center; justify-content: center; background-color: #fff; color: #444; width: 70px; height: 25px; padding:2px}
+.accordion .buttonWrap .complete{display:flex; align-items: center; justify-content: center; background-color: #fff; color: #3396ff; width: 70px; height: 25px; padding:2px}
 .accordion .buttonWrap .kakao{background-color: #fbdf1d;}
 .accordion .buttonWrap .kakao img{width:70px; height:15px; object-fit: contain;}
 
