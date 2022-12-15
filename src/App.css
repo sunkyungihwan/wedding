@@ -56,21 +56,20 @@ button:disabled {opacity:0.4;}
 .container .place {padding: 6%}
 .place .map {height: 240px; margin: 20px auto;}
 .place .address{display: flex; flex-direction: column; font-size: .8rem;} 
-.customoverlay {position: relative; top: 50px; border-radius: 6px; border: 1px solid #ccc; border-bottom: 2px solid #ddd; float: left;}
+.customoverlay {position: relative; top: -55px; border-radius: 6px; border: 1px solid #ccc; border-bottom: 2px solid #ddd; float: left;}
 .customoverlay:nth-of-type(n) {border: 0; box-shadow: 0px 1px 2px #888;}
 .customoverlay a { display: block; text-decoration: none; color: #000; text-align: center; border-radius: 6px; overflow: hidden; background: #f0ab00;
     background: #f0ab00 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
-.customoverlay .tag {display: block; text-align: center; background: #fff; margin-right: 35px; padding: 5px 10px; font-size: .8rem;}
-.customoverlay:after {content: ''; position: absolute; margin-left: -12px; left: 50%; top: -12px; width: 22px; height: 12px; 
-    background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png');
-    -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg);}
-.place .transportation{font-size: .8rem; text-align: left; width: 90%; margin:auto} 
+.customoverlay .tag {display: block; text-align: center; background: #fff; margin-right: 35px; padding: 5px 10px; font-size: .7rem;}
+.customoverlay:after {content: ''; position: absolute; margin-left: -12px; left: 52%; top: 25px; width: 22px; height: 12px; 
+    background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png');}
+.place .transportation{font-size: .8rem; text-align: left; width: fit-content; margin:auto} 
 .place .transportation .transBox{margin: 15px 5px}
 .place .transportation .means{font-size: 1rem; font-weight: bold;}
 .place .transportation .desc{margin:5px; font-weight: normal;}
 
 /* information */
-.container .information {margin: 10% 6%}
+.container .information {margin: 10% 6%;}
 .information img{width: 100%;}
 .information .info{width: 90%; margin:auto}
 .information dl{margin: 2%; padding:2%; font-size: .8rem; display: flex;}
@@ -167,9 +166,9 @@ button:disabled {opacity:0.4;}
   .image-gallery-thumbnails{padding:3px 0}
 }
 .image-gallery-thumbnails .image-gallery-thumbnails-container{cursor:pointer;text-align:center;white-space:nowrap}
-.image-gallery-thumbnail{display:inline-block;border:4px solid transparent; border-radius: 20px;transition:border .3s ease-out;width:100px;background:transparent;padding:0}
+.image-gallery-thumbnail{display:inline-block;border:none; border-radius: 20px;transition:border .3s ease-out;width:100px;background:transparent;padding:0}
 @media(max-width: 768px){
-  .image-gallery-thumbnail{border:3px solid transparent;width:81px}
+  .image-gallery-thumbnail{border:none;width:81px}
 }
 .image-gallery-thumbnail+.image-gallery-thumbnail{margin-left:2px}
 .image-gallery-thumbnail .image-gallery-thumbnail-inner{display:block;position:relative}
@@ -207,12 +206,13 @@ button:disabled {opacity:0.4;}
 .accordionBox.minus .accordion:nth-child(2){animation: smoothDisappear 0.4s; animation-delay: 0.1s;}
 .accordionBox.minus .accordion:nth-child(1){animation: smoothDisappear 0.4s; animation-delay: 0.2s;}
 .accordion{display:flex; margin: 10px 0; padding: 10px; justify-content:space-between; align-items:center; border: none; border-radius: 10px; background: #fff; box-shadow: 0 3px 3px rgb(0 0 0 / 10%); }
-.accordion .accordionInfo{display: flex; justify-content: left; font-size: 0.7rem; flex-direction: column; text-align: left;}
+.accordion .accordionInfo{display: flex; justify-content: left; font-size: .8rem; font-weight: normal; flex-direction: column; text-align: left;}
 .accordion .accordionInfo .accountInfo{display: flex; padding: 0 0 5px 0}
 .accordion .accordionInfo .bank{padding: 0 5px 0 0}
 
-.accordion .buttonWrap{display:flex; flex-direction: column; font-size: .8rem;}
-.accordion .buttonWrap button{border:none; cursor: pointer; display: flex; width:70px; height:25px; border-radius: 15px; background-color: #f0f1f3; align-items:center; justify-content: center; margin:2px; padding:5px}
+.accordion .buttonWrap{display:flex; flex-direction: column; font-size: .8rem; }
+.accordion .buttonWrap button{border:none; cursor: pointer; display: flex; width:70px; height:25px; font-weight: normal; border-radius: 15px; background-color: #f0f1f3; align-items:center; justify-content: center; margin:2px; padding:5px}
+.accordion .buttonWrap span{font-weight: normal;}
 .accordion .buttonWrap button:hover {background:#f5f5f5; text-decoration:underline;}
 .accordion .buttonWrap button:active {background:#ccc; text-decoration:none; box-shadow:inset 0 0 0 3px #444;}
 

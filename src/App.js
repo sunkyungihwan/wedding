@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import Home from './components/Home';
 import Information from './components/Information';
 import Gallery from './components/Gallery';
@@ -8,6 +9,9 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      },[]);
     return (
         <div className="container">
             <Home />

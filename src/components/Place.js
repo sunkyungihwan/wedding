@@ -30,13 +30,13 @@ function Place() {
             image: markerImage
         });
         marker.setMap(map);
-        map.setDraggable(false);
+        /* map.setDraggable(false);
         map.setZoomable(false);
         map.addControl(new window.kakao.maps.ZoomControl(), window.kakao.maps.ControlPosition.RIGHT);
-
+        */
         var content =
             '<div class="customoverlay">' +
-            '  <a href="https://map.kakao.com/link/map/1610731648" target="_blank">' +
+            '  <a href="https://naver.me/ForRXY0D" target="_blank">' +
             '    <span class="tag">빌라드지디</span>' +
             '  </a>' +
             '</div>';
