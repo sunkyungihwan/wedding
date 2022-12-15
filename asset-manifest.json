@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/wedding/static/css/main.a0e70b27.css",
-    "main.js": "/wedding/static/js/main.cf17cd71.js",
+    "main.css": "/wedding/static/css/main.11e41840.css",
+    "main.js": "/wedding/static/js/main.8b830921.js",
     "static/media/pic00.png": "/wedding/static/media/pic00.46d7045c21a8dd91a864.png",
-    "static/media/pic04.JPG": "/wedding/static/media/pic04.82d8fb36f60ae02af966.JPG",
-    "static/media/pic03.jpg": "/wedding/static/media/pic03.89fd963a894bbdf75f67.jpg",
+    "static/media/info.jpg": "/wedding/static/media/info.82d8fb36f60ae02af966.jpg",
+    "static/media/pic05.jpg": "/wedding/static/media/pic05.89fd963a894bbdf75f67.jpg",
     "static/media/pic01.jpg": "/wedding/static/media/pic01.37e952cbc6241ea74b5d.jpg",
-    "static/media/pic02.jpg": "/wedding/static/media/pic02.891517d357cb8677d232.jpg",
+    "static/media/pic08.jpg": "/wedding/static/media/pic08.891517d357cb8677d232.jpg",
+    "static/media/pic07.jpg": "/wedding/static/media/pic07.076d057fde81952498b8.jpg",
+    "static/media/pic06.jpg": "/wedding/static/media/pic06.8869709dd8d07e4816ba.jpg",
+    "static/media/pic03.jpg": "/wedding/static/media/pic03.55e72fdd318ca24f6f3f.jpg",
+    "static/media/pic04.jpg": "/wedding/static/media/pic04.ab6a363a4aede2fa878e.jpg",
+    "static/media/pic02.jpg": "/wedding/static/media/pic02.5d4304ac5174be69ac4c.jpg",
     "static/media/marker.png": "/wedding/static/media/marker.2fa7d307d1792a2b4c8c.png",
     "index.html": "/wedding/index.html",
     "static/media/icon_arrowDown.svg": "/wedding/static/media/icon_arrowDown.50bb85a1b2b41768d3af.svg",
-    "main.a0e70b27.css.map": "/wedding/static/css/main.a0e70b27.css.map",
-    "main.cf17cd71.js.map": "/wedding/static/js/main.cf17cd71.js.map"
+    "main.11e41840.css.map": "/wedding/static/css/main.11e41840.css.map",
+    "main.8b830921.js.map": "/wedding/static/js/main.8b830921.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0e70b27.css",
-    "static/js/main.cf17cd71.js"
+    "static/css/main.11e41840.css",
+    "static/js/main.8b830921.js"
   ]
 }
