@@ -171,7 +171,7 @@ button:disabled {opacity:0.4;}
   .image-gallery-thumbnail{border:none;width:81px}
 }
 .image-gallery-thumbnail+.image-gallery-thumbnail{margin-left:2px}
-.image-gallery-thumbnail .image-gallery-thumbnail-inner{display:block;position:relative}
+.image-gallery-thumbnail .image-gallery-thumbnail-inner{display:block;position:relative; padding:2px}
 .image-gallery-thumbnail .image-gallery-thumbnail-image{vertical-align:middle;width:100%;line-height:0}
 .image-gallery-thumbnail.active{outline: none; border:none}
 .image-gallery-thumbnail:focus{outline:none;border: 2px solid; border-radius: 20px;}
