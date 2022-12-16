@@ -9,7 +9,7 @@ function Accordion({ data }) {
         setTimeout(() => {
             setCopied(false);
         }, 1000);
-      }
+    };
     return (
         <div className="accordion">
             <div className="accordionInfo">
@@ -26,7 +26,7 @@ function Accordion({ data }) {
                     </div>
                 ) : (
                     <CopyToClipboard text={data.account_number} onCopy={copy}>
-	                    <button>복사하기</button>
+                        <button>복사하기</button>
                     </CopyToClipboard>
                 )}
                 {data.kakaopay !== '' ? (
