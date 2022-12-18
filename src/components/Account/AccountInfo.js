@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from "framer-motion";
 import Accordion from './Accordion';
 
 function AccountInfo({ data }) {
     let [isActive, setActive] = useState(false);
-    let [isRealActive, setRealActive] = useState(false);
 
     function toggleGroomActive() {
         setActive(!isActive);
-
-        if (isRealActive) {
-            setTimeout(() => {
-                setRealActive(false);
-            }, 450);
-        } else setRealActive(true);
     }
 
     function AccordionBox({ info }) {
@@ -27,13 +21,34 @@ function AccountInfo({ data }) {
 
     return (
         <div className="accountBox">
+        
             <div>
-                <button className="button arrow" onClick={toggleGroomActive} disabled={isRealActive ^ isActive}>
+            <motion.button initial={false} className="button arrow"
+            animate={{ backgroundColor: isActive ? "#dddddd" : "#ffffff" }}
+            onClick={toggleGroomActive}>
                     {data.type}측 계좌번호
-                    <div className={isActive ? 'icon plus' : 'icon minus'}></div>
-                </button>
+                    <div className="iconDiv">
+                    <motion.div className="icon" initial={false} animate={{rotate: isActive? 0:180}}></motion.div>
+                    </div>
+                </motion.button>
+
             </div>
-            {isRealActive ? <AccordionBox info={data.info} /> : null}
+            <AnimatePresence initial={false}>
+        {isActive && (
+          <motion.section
+            key="content"
+            initial="collapsed"
+            animate="open"
+            exit="collapsed"
+            variants={{
+              open: { opacity: 1, height: "auto" },
+              collapsed: { opacity: 0, height: 0 }
+            }}
+            transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+          > <AccordionBox info={data.info} />
+          </motion.section>
+        )}
+      </AnimatePresence>
         </div>
     );
 }

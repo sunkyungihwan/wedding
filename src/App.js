@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Information from './components/Information';
 import Gallery from './components/Gallery';
 import Place from './components/Place';
+import Family from './components/Family';
 import Account from './components/Account';
 import Footer from './components/Footer';
 
@@ -15,6 +16,7 @@ function App() {
     return (
         <div className="container">
             <Home />
+            <Family/>
             <Information />
             <Gallery />
             <Account />

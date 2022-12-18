@@ -6,24 +6,24 @@ import useScrollFadeIn from '..//hooks/useScrollFadeIn';
 const Family = () => {
     const animatedItem = useScrollFadeIn('up', 1, 0);
     return (
-        <div {...animatedItem} className="content account">
+        <div {...animatedItem} className="content family">
             <div>
-                <span>
+                <span className="parent">
                     이동관
-                    <span>·</span>
+                    <span className="dot">·</span>
                     김태선
                 </span>
-                <span>의 차남</span>
-                <span>이기환</span>
+                <span className="relation">의 차남</span>
+                <span className="name">기환</span>
             </div>
             <div>
-                <span>
+                <span className="parent">
                     최용찬
-                    <span>·</span>
+                    <span  className="dot">·</span>
                     김점숙
                 </span>
-                <span>의 차녀</span>
-                <span>최선경</span>
+                <span className="relation">의 차녀</span>
+                <span className="name">선경</span>
             </div>
         </div>
     );
