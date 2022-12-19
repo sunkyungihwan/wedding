@@ -16,7 +16,7 @@ function App() {
     return (
         <div className="container">
             <Home />
-            <Family/>
+            <Family />
             <Information />
             <Gallery />
             <Account />

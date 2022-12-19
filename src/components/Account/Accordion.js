@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { motion, useAnimationControls } from "framer-motion";
+import { motion, useAnimationControls } from 'framer-motion';
 import kakaopay from '../../assets/img/icon-kakaopay.png';
 
 function Accordion({ data }) {
@@ -15,12 +15,12 @@ function Accordion({ data }) {
 
     useEffect(() => {
         if (isCopied) {
-          controls.start({ scale: 1.3 });
+            controls.start({ scale: 1.3 });
         }
-      }, [controls, isCopied]);
+    }, [controls, isCopied]);
 
     return (
-        <motion.div  className="accordion">
+        <motion.div className="accordion">
             <div className="accordionInfo">
                 <div className="accountInfo">
                     <span className="bank">{data.account_bank}</span>
@@ -35,7 +35,7 @@ function Accordion({ data }) {
                     </div>
                 ) : (
                     <CopyToClipboard text={data.account_number} onCopy={copy}>
-                        <button >복사하기</button>
+                        <button>복사하기</button>
                     </CopyToClipboard>
                 )}
                 {data.kakaopay !== '' ? (

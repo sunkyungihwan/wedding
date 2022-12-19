@@ -19,7 +19,7 @@ const Family = () => {
             <div>
                 <span className="parent">
                     최용찬
-                    <span  className="dot">·</span>
+                    <span className="dot">·</span>
                     김점숙
                 </span>
                 <span className="relation">의 차녀</span>
