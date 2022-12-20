@@ -23,16 +23,16 @@ function Home() {
         <div className="content home">
             <div className="name">
                 <div className="heart">
-                    <div className="you">
+                    <div className="tag">
                         <p>이기환</p>
                     </div>
-                    <div>
+                    <div className="icon">
 
                     <motion.div initial="hidden" animate="visible" variants={variants} className="small">
                         <img src={heart} />
                     </motion.div>
                     </div>
-                    <div className="me">
+                    <div className="tag">
                         <p>최선경</p>
                     </div>
                 </div>
