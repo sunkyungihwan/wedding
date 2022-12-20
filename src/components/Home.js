@@ -13,7 +13,7 @@ function Home() {
             rotate: -15,
             transition: {
                 delay: 0.2,
-                duration: 1,
+                duration: 0.5,
                 repeat: Infinity,
                 repeatType: 'reverse'
             }
@@ -26,10 +26,13 @@ function Home() {
                     <div className="you">
                         <p>이기환</p>
                     </div>
+                    <div>
+
                     <motion.div initial="hidden" animate="visible" variants={variants} className="small">
                         <img src={heart} />
                     </motion.div>
-                    <div className="you">
+                    </div>
+                    <div className="me">
                         <p>최선경</p>
                     </div>
                 </div>
