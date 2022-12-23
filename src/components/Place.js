@@ -30,7 +30,7 @@ function Place() {
             image: markerImage
         });
         marker.setMap(map);
-         map.setDraggable(true);
+        map.setDraggable(true);
         /*map.setZoomable(false);
         map.addControl(new window.kakao.maps.ZoomControl(), window.kakao.maps.ControlPosition.RIGHT);
         */
@@ -70,7 +70,7 @@ function Place() {
                     <div className="means">셔틀버스</div>
                     <div className="desc">
                         지하철 수서역 4번 출구 앞 10분 간격 셔틀버스 운행 ( SRT는 1번 출구)
-                        <br/> - 약 10분 소요
+                        <br /> - 약 10분 소요
                     </div>
                 </div>
                 <div className="transBox">

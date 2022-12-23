@@ -27,10 +27,9 @@ function Home() {
                         <p>이기환</p>
                     </div>
                     <div className="icon">
-
-                    <motion.div initial="hidden" animate="visible" variants={variants} className="small">
-                        <img src={heart} />
-                    </motion.div>
+                        <motion.div initial="hidden" animate="visible" variants={variants} className="small">
+                            <img src={heart} />
+                        </motion.div>
                     </div>
                     <div className="tag">
                         <p>최선경</p>
