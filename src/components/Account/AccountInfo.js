@@ -25,7 +25,7 @@ function AccountInfo({ data }) {
                 <motion.button
                     initial={false}
                     className="button arrow"
-                    animate={{ backgroundColor: isActive ? '#e9e9e9' : '#ffffff' }}
+                    animate={{ boxShadow: isActive ? 'inset 0 1px 1px #eee' : '0 3px 3px #ddd' }}
                     onClick={toggleGroomActive}
                 >
                     {data.type}측 계좌번호

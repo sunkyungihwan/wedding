@@ -30,8 +30,8 @@ function Place() {
             image: markerImage
         });
         marker.setMap(map);
-        /* map.setDraggable(false);
-        map.setZoomable(false);
+         map.setDraggable(true);
+        /*map.setZoomable(false);
         map.addControl(new window.kakao.maps.ZoomControl(), window.kakao.maps.ControlPosition.RIGHT);
         */
         var content =
