@@ -42,7 +42,7 @@ function Home() {
             </div>
             <div className="location">
                 <p>
-                    2023. 02. 25. 토요일 낮 13:30 <br />
+                    2023. 02. 25. 토요일 낮 01:30 <br />
                     빌라드 지디 수서
                 </p>
             </div>
