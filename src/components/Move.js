@@ -3,6 +3,8 @@ import useScrollFadeIn from '..//hooks/useScrollFadeIn';
 import bride from '../assets/img/bride.png';
 import groom from '../assets/img/groom.png';
 import married from '../assets/img/married.png';
+import open from '../assets/img/open.png';
+
 
 const Information = () => {
     const animatedItem = useScrollFadeIn('up', 1, 0);
@@ -11,6 +13,7 @@ const Information = () => {
             <h2 className="title">동선 안내</h2>
             <div className="info">
                 <div className="boxWrap">
+                    <div className="box start"></div>
                     <div className="box">
                         <img src={married}></img>
                         <div>
@@ -24,7 +27,7 @@ const Information = () => {
                         </div>
                     </div>
                     <div className="box">
-                        <div>icon</div>
+                    <img  className="open" src={open}></img>
                         <div>
                             연회장<span>(4층)</span>
                         </div>
@@ -32,6 +35,7 @@ const Information = () => {
                     <div className="box last"></div>
                 </div>
                 <div className="boxWrap grid">
+                    <div className="box start"></div>
                     <div className="box">
                         <div className="top">
                             <div className="time">12:00</div>
@@ -51,6 +55,7 @@ const Information = () => {
                     <div className="box last"></div>
                 </div>
                 <div className="boxWrap">
+                    <div className="box start"></div>
                     <div className="box">
                         <div className="time">14:30</div>
                         <img src={married}></img>
@@ -60,10 +65,10 @@ const Information = () => {
                     </div>
                     <div className="box">
                         <div className="time">14:00</div>
+                        <img  className="open" src={open}></img>
                         <div>
                             연회장<span>(1층)</span>
                         </div>
-                        <div>icon</div>
                     </div>
                     <div className="box">
                         <div className="time">13:30</div>
