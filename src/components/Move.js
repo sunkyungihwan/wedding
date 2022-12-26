@@ -10,7 +10,7 @@ const Information = () => {
     const animatedItem = useScrollFadeIn('up', 1, 0);
     return (
         <div {...animatedItem} className="content move">
-            <h2 className="title">동선 안내</h2>
+            <h2 className="title">시간별 안내</h2>
             <div className="info">
                 <div className="boxWrap">
                     <div className="box start"></div>

@@ -3,14 +3,18 @@ import useScrollFadeIn from '..//hooks/useScrollFadeIn';
 import photo from '../assets/img/info.jpg';
 
 const Information = () => {
-    const animatedItem = useScrollFadeIn('up', 1, 0);
+    const animatedItem = [
+        useScrollFadeIn('up', 1, 0),
+        useScrollFadeIn('up', 1, 0),
+        useScrollFadeIn('up', 1, 0)
+    ];
     return (
-        <div {...animatedItem} className="content information">
-            <h2 className="title">층별 안내</h2>
-            <div>
+        <div className="content information">
+            <h2 {...animatedItem[0]} className="title">층별 안내</h2>
+            <div {...animatedItem[1]}>
                 <img src={photo} />
             </div>
-            <div className="info">
+            <div {...animatedItem[2]} className="info">
                 <dl className="floor">
                     <dt>5층</dt>
                     <dd>예식장 / 신부대기실</dd>
@@ -37,8 +41,9 @@ const Information = () => {
                 </dl>
                 <dl>
                     <dt>B1층</dt>
-                    <dd>ATM</dd>
+                    <dd>ATM<span>수수료 있음</span></dd>
                 </dl>
+                <div className="ref" align='left' vertical-align="middle">카페 이용 많이 부탁드립니다:D</div>
             </div>
         </div>
     );

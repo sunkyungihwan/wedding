@@ -37,11 +37,12 @@ a {
 .content .title{font-size: 1.5rem; display:flex; justify-content: center;}
 .content .title::before{content:''; margin-right: 5%; font-size:0; display:block; width:24px; height:24px; background:url(../src/assets/img/green-tea.png)no-repeat;}
 .content .title::after{content:''; margin-left: 5%;  font-size:0; display:block; width:24px; height:24px; background:url(../src/assets/img/green-tea.png)no-repeat; transform: scaleX(-1);}
-
+.content .ref{font-size: .8rem; margin: 7% 1%; display: flex; align-items: center}
+.content .ref::before{content:''; margin-right: 2%; margin-bottom: 4px; font-size:0; display:block; width:16px; height:16px; background:url(../src/assets/img/flower.png)no-repeat;}
 
 /* home */
 .home{padding: 10% 0}
-.home .name{font-size: 1.5rem; margin-bottom: 5%; display: flex; justify-content: center}
+.home .name{font-size: 2rem; margin-bottom: 5%; display: flex; justify-content: center}
 .home .name .heart{display: flex; justify-content: center; width: 100%;}
 .home .name .tag{width: 100%; font-weight: bold;}
 .home .name img{object-fit: contain;}
@@ -213,7 +214,7 @@ a {
 .move .grid .box{border-top: solid #ddd; border-bottom: solid #ddd; padding-bottom: 5%;}
 .move .grid .last{border-right: solid #ddd; border-radius: 0 30px 30px 0;}
 
-.move .box .time{display: flex; flex-direction: column; align-items: center;}
+.move .box .time{display: flex; flex-direction: column; align-items: center; font-size: 1rem;}
 .move .box .time::before{content:''; position: relative; margin-bottom: 5%; font-size:0; display:block; width:3px; height:10px; background: #ddd}
 .move .box .open{opacity: 60%;}
 
