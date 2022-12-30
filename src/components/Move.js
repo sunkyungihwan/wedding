@@ -5,7 +5,6 @@ import groom from '../assets/img/groom.png';
 import married from '../assets/img/married.png';
 import open from '../assets/img/open.png';
 
-
 const Information = () => {
     const animatedItem = useScrollFadeIn('up', 1, 0);
     return (
@@ -27,7 +26,7 @@ const Information = () => {
                         </div>
                     </div>
                     <div className="box">
-                    <img  className="open" src={open}></img>
+                        <img className="open" src={open}></img>
                         <div>
                             연회장<span>(4층)</span>
                         </div>
@@ -57,7 +56,7 @@ const Information = () => {
                 <div className="boxWrap">
                     <div className="box start"></div>
                     <div className="box">
-                        <div className="time">14:30</div>
+                        <div className="time">14:40</div>
                         <img src={married}></img>
                         <div>
                             2부 시작<span>(1층)</span>
@@ -65,7 +64,7 @@ const Information = () => {
                     </div>
                     <div className="box">
                         <div className="time">14:00</div>
-                        <img  className="open" src={open}></img>
+                        <img className="open" src={open}></img>
                         <div>
                             연회장<span>(1층)</span>
                         </div>

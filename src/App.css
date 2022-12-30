@@ -37,7 +37,7 @@ a {
 .content .title{font-size: 1.5rem; display:flex; justify-content: center;}
 .content .title::before{content:''; margin-right: 5%; font-size:0; display:block; width:24px; height:24px; background:url(../src/assets/img/green-tea.png)no-repeat;}
 .content .title::after{content:''; margin-left: 5%;  font-size:0; display:block; width:24px; height:24px; background:url(../src/assets/img/green-tea.png)no-repeat; transform: scaleX(-1);}
-.content .ref{font-size: .8rem; margin: 7% 1%; display: flex; align-items: center}
+.content .ref{font-size: .9rem; margin: 7% 1%; display: flex; align-items: center}
 .content .ref::before{content:''; margin-right: 2%; margin-bottom: 4px; font-size:0; display:block; width:16px; height:16px; background:url(../src/assets/img/flower.png)no-repeat;}
 
 /* home */
@@ -72,8 +72,8 @@ a {
 .information .info{width: 90%; margin:auto; font-weight: bold;}
 .information dl{margin: 2%; padding:2%; font-size: 1rem; display: flex;}
 .information dl dt{width: 20%;}
-.information dl dd{display: flex; width: 100%; align-items: center;}
-.information dl dd span{font-size: .9rem; color:#777; margin-left: 10%;}
+.information dl dd{display: flex; width: 100%; align-items: flex-start; flex-direction: column;}
+.information dl dd span{font-size: .9rem; color:#777; margin-top: 2%;}
 .information .floor{border-bottom: 1px solid #bbb;}
 
 /* gallery */

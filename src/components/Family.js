@@ -19,8 +19,11 @@ const Family = () => {
                         <div {...animatedItem[1]}>
                             <div className="quote"></div>
                             <div className="cursive">
-                                <i>네 번의 모든 계절들과 열두 달의 시간을<br/>
-                                너와 숨이 차게 매일 사랑하며 함께 할게</i>
+                                <i>
+                                    네 번의 모든 계절들과 열두 달의 시간을
+                                    <br />
+                                    너와 숨이 차게 매일 사랑하며 함께 할게
+                                </i>
                             </div>
                             <div className="movie">- 마음을 드려요 IU</div>
                             <div className="quote back"></div>
