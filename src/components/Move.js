@@ -78,6 +78,11 @@ const Information = () => {
                     </div>
                     <div className="box last"></div>
                 </div>
+                <div className="ref" align="left" vertical-align="middle">
+                    <div className="route">
+                        <div>13:00까지 신랑, 신부가 5층에서 사진을 찍고있을 수 있습니다</div>
+                    </div>
+                </div>
             </div>
         </div>
     );

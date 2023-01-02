@@ -16,18 +16,20 @@ const Information = () => {
                 <dl className="floor">
                     <dt>5층</dt>
                     <dd>
-                        예식장 / 신부대기실<span></span>
+                        예식장 / 신부대기실<span>138석, 신부대기실은 계단으로 한층 위</span>
                     </dd>
                 </dl>
                 <dl className="floor">
                     <dt>4층</dt>
                     <dd>
-                        연회장<span>오픈시간 - 13:00 ~ 15:30</span>
+                        연회장<span>250석, 오픈시간 - 13:00 ~ 15:30</span>
                     </dd>
                 </dl>
                 <dl className="floor">
                     <dt>3층</dt>
-                    <dd>로비 (접수대 & 포토테이블 & 축의대)</dd>
+                    <dd>
+                        로비<span>접수대 & 포토테이블 & 축의대</span>
+                    </dd>
                 </dl>
                 <dl className="floor">
                     <dt>2층</dt>
@@ -36,7 +38,7 @@ const Information = () => {
                 <dl className="floor">
                     <dt>1층</dt>
                     <dd>
-                        연회장 (2부진행) / 포토박스 <span>오픈시간 - 14:00 ~ 15:30</span>
+                        연회장 (2부진행) / 포토박스 <span>230석, 오픈시간 - 14:00 ~ 15:30</span>
                     </dd>
                 </dl>
                 <dl>
@@ -44,7 +46,10 @@ const Information = () => {
                     <dd>ATM</dd>
                 </dl>
                 <div className="ref" align="left" vertical-align="middle">
-                    하객 동선 : 1층(로비) → 3층(축의대) → 5층(예식장) → 1층(연회장)
+                    <div className="route">
+                        <div className="guest">하객 동선 :</div>
+                        <div>1층(포토박스) → 3층(축의대) → 5층(예식장) → 1층(연회장)</div>
+                    </div>
                 </div>
             </div>
         </div>

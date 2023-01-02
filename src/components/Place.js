@@ -79,7 +79,11 @@ function Place() {
                 </div>
                 <div className="transBox">
                     <div className="means">자차</div>
-                    <div className="desc">빨간모자 쓴 주차 안내 직원을 찾아주세요</div>
+                    <div className="desc">
+                        빨간모자 쓴 주차 안내 직원을 찾아주세요
+                        <br /> - 공영주차장(100대)
+                        <br /> - 공터주차장(70대)
+                    </div>
                 </div>
             </div>
         </div>
