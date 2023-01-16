@@ -1,25 +1,29 @@
 {
   "files": {
     "main.css": "/wedding/static/css/main.0dedb4ca.css",
-    "main.js": "/wedding/static/js/main.4b20b74c.js",
+    "main.js": "/wedding/static/js/main.05aac82a.js",
     "static/media/pic00.png": "/wedding/static/media/pic00.46d7045c21a8dd91a864.png",
     "static/media/info.jpg": "/wedding/static/media/info.82d8fb36f60ae02af966.jpg",
-    "static/media/pic05.jpg": "/wedding/static/media/pic05.89fd963a894bbdf75f67.jpg",
+    "static/media/pic10.jpg": "/wedding/static/media/pic10.a266b15ecb3b5374ddc8.jpg",
+    "static/media/pic12.jpg": "/wedding/static/media/pic12.de47eca74cf009a5ea00.jpg",
+    "static/media/pic06.jpg": "/wedding/static/media/pic06.89fd963a894bbdf75f67.jpg",
+    "static/media/pic07.jpg": "/wedding/static/media/pic07.196ab11ca239c98ff4c9.jpg",
+    "static/media/pic08.jpg": "/wedding/static/media/pic08.54883dfe1c87ecefff58.jpg",
+    "static/media/pic11.jpg": "/wedding/static/media/pic11.fa7c39d8fde81f670962.jpg",
     "static/media/pic01.jpg": "/wedding/static/media/pic01.37e952cbc6241ea74b5d.jpg",
-    "static/media/pic08.jpg": "/wedding/static/media/pic08.891517d357cb8677d232.jpg",
-    "static/media/pic07.jpg": "/wedding/static/media/pic07.076d057fde81952498b8.jpg",
-    "static/media/pic06.jpg": "/wedding/static/media/pic06.8869709dd8d07e4816ba.jpg",
-    "static/media/pic03.jpg": "/wedding/static/media/pic03.55e72fdd318ca24f6f3f.jpg",
-    "static/media/pic04.jpg": "/wedding/static/media/pic04.ab6a363a4aede2fa878e.jpg",
-    "static/media/pic02.jpg": "/wedding/static/media/pic02.5d4304ac5174be69ac4c.jpg",
+    "static/media/pic09.jpg": "/wedding/static/media/pic09.891517d357cb8677d232.jpg",
+    "static/media/pic02.jpg": "/wedding/static/media/pic02.71a2833d37a5b423d0ba.jpg",
+    "static/media/pic05.jpg": "/wedding/static/media/pic05.9da2ba14a73d4a2c2979.jpg",
+    "static/media/pic04.jpg": "/wedding/static/media/pic04.7a40ddcf789599ae57f9.jpg",
+    "static/media/pic03.jpg": "/wedding/static/media/pic03.8bfbdc69ff369357d934.jpg",
     "static/media/marker.png": "/wedding/static/media/marker.2fa7d307d1792a2b4c8c.png",
     "index.html": "/wedding/index.html",
     "static/media/icon_arrowDown.svg": "/wedding/static/media/icon_arrowDown.50bb85a1b2b41768d3af.svg",
     "main.0dedb4ca.css.map": "/wedding/static/css/main.0dedb4ca.css.map",
-    "main.4b20b74c.js.map": "/wedding/static/js/main.4b20b74c.js.map"
+    "main.05aac82a.js.map": "/wedding/static/js/main.05aac82a.js.map"
   },
   "entrypoints": [
     "static/css/main.0dedb4ca.css",
-    "static/js/main.4b20b74c.js"
+    "static/js/main.05aac82a.js"
   ]
 }
