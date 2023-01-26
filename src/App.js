@@ -4,6 +4,7 @@ import Information from './components/Information';
 import Move from './components/Move';
 import Gallery from './components/Gallery';
 import Place from './components/Place';
+import Bus from './components/Bus';
 import Family from './components/Family';
 import Account from './components/Account';
 import Footer from './components/Footer';
@@ -22,6 +23,7 @@ function App() {
             <Move />
             <Gallery />
             <Account />
+            <Bus />
             <Place />
             <Footer />
         </div>

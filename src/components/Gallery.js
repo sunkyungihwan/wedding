@@ -4,7 +4,7 @@ import useScrollFadeIn from '..//hooks/useScrollFadeIn';
 import photo1 from '../assets/img/pic01.jpg';
 import photo2 from '../assets/img/pic02.jpg';
 import photo3 from '../assets/img/pic03.jpg';
-import photo4 from '../assets/img/pic04.jpg';
+import photo4 from '../assets/img/pic04.JPG';
 import photo5 from '../assets/img/pic05.jpg';
 import photo6 from '../assets/img/pic06.jpg';
 import photo7 from '../assets/img/pic07.jpg';
