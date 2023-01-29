@@ -37,10 +37,10 @@ a {
 .content .title{font-size: 1.5rem; display:flex; justify-content: center;}
 .content .title::before{content:''; margin-right: 5%; font-size:0; display:block; width:24px; height:24px; background:url(../src/assets/img/green-tea.png)no-repeat;}
 .content .title::after{content:''; margin-left: 5%;  font-size:0; display:block; width:24px; height:24px; background:url(../src/assets/img/green-tea.png)no-repeat; transform: scaleX(-1);}
-.content .ref{font-size: .9rem; margin: 7% 0; display: flex; align-items: center; justify-content: center;}
-.content .ref::before{content:''; margin-bottom: 4px; font-size:0; display:block; width:20px; height:16px; background:url(../src/assets/img/flower.png)no-repeat;}
-.content .ref .route{display: flex;  align-items: center}
-.content .ref .route .guest{min-width: 60px;}
+.content .ref{flex-direction: column; font-size: .9rem; margin: 7% 0; display: flex; align-items: center; justify-content: center;}
+.content .ref .route::before{content:''; margin-bottom: 4px; font-size:0; display:block; width:20px; height:16px; background:url(../src/assets/img/flower.png)no-repeat;}
+.content .ref .route{display: flex;  align-items: center; font-size: 1rem; margin: 3px 0}
+.content .ref .route .guest{width: 100px;}
 
 /* home */
 .home{padding: 10% 0}
@@ -57,13 +57,14 @@ a {
 .place .map {height: 240px; margin: 20px auto;}
 .place .address{display: flex; flex-direction: column; font-size: 1rem;} 
 .place .address a{color: #3a7544}
-.place .address .desc{margin-top: 15px}
-.customoverlay {position: relative; top: -50px; border-radius: 6px; border: 1px solid #ccc; border-bottom: 2px solid #ddd; float: left;}
+.place .address .desc{margin-top: 15px; display: flex; justify-content: center; align-items: center;}
+.place .address .desc .spot{margin: 0 10px;}
+.customoverlay {position: relative; top: -55px; border-radius: 6px; border: 1px solid #ccc; border-bottom: 2px solid #ddd; float: left;}
 .customoverlay:nth-of-type(n) {border: 0; box-shadow: 0px 1px 2px #888;}
 .customoverlay a { display: block; text-decoration: none; color: #000; text-align: center; border-radius: 6px; overflow: hidden; background: #f0ab00;
     background: #f0ab00 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
 .customoverlay .tag {display: block; text-align: center; background: #fff; margin-right: 35px; padding: 5px 10px; font-size: .7rem; font-weight: bold;}
-.customoverlay:after {content: ''; position: absolute; margin-left: -8px; left: 52%; top: 20px; width: 22px; height: 12px; 
+.customoverlay:after {content: ''; position: absolute; margin-left: -12px; left: 52%; top: 22px; width: 22px; height: 12px; 
     background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png');}
 .place .transportation{font-size: .9rem; text-align: left; width: fit-content; margin:auto} 
 .place .transportation .transBox{margin: 15px 5px}

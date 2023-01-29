@@ -80,7 +80,10 @@ const Information = () => {
                 </div>
                 <div className="ref" align="left" vertical-align="middle">
                     <div className="route">
-                        <div>13:00까지 신랑, 신부는 5층에서 사진 촬영 예정입니다<br/>식사 먼저 하시는 분들은 4층을 이용해주세요</div>
+                        <div>5층에서 13:00까지 신랑, 신부는 사진 촬영 예정입니다</div>
+                    </div>
+                    <div className="route">
+                        <div>식사 먼저 하시는 분들은 4층을 이용해주세요</div>
                     </div>
                 </div>
             </div>

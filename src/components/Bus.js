@@ -11,8 +11,8 @@ function Bus() {
             </h2>
             <div {...animatedItem[1]} className="address">
                 <span>(세운고속관광) 대구 70바 5006</span>
-                <a href={'tel:010-5063-8989'}>010-5063-8989</a>
-                <span className="desc">어린이회관 8시 20분 출발 → 유통단지 전자관 정문 8시 40분 출발</span>
+                <span>기사님 번호 :<a href={'tel:010-5063-8989'}> 010-5063-8989</a></span>
+                <div className="desc"><div className="spot">어린이회관<br/>8시 20분 출발</div> → <div className="spot">유통단지 전자관 정문<br/> 8시 40분 출발</div></div>
             </div>
         </div>
     );
